@@ -1,0 +1,4 @@
+{
+    "name":"NODE-RAD_CORE_COMMANDS",
+    "main":"noderad-commands.js"
+}
