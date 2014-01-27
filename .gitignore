@@ -2,3 +2,4 @@
 /.idea/
 *.ipr
 *.ipl
+node_modules

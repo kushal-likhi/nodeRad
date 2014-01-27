@@ -1,0 +1,47 @@
+{
+    "name": "NodeRad",
+    "description": "Quick App generator for a MVC Express based node application",
+    "version": "0.1.9",
+    "dependencies": {
+        "colors": "*",
+        "mkdirp": "*",
+        "commander": "*"
+    },
+    "author": {
+        "name": "Kushal Likhi",
+        "email": "kushal.likhi@gmail.com"
+    },
+    "contributors": [
+        {
+            "name": "Kushal Likhi",
+            "email": "kushal.likhi@gmail.com"
+        }
+    ],
+    "devDependencies": {
+        "mocha": "~1.15.1"
+    },
+    "keywords": [
+        "noderad",
+        "express",
+        "boilerplate",
+        "mvc",
+        "web",
+        "rest",
+        "restful",
+        "app"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/kushal-likhi/nodeRad.git"
+    },
+    "main": "noderad",
+    "bin": {
+        "noderad": "./bin/noderad"
+    },
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "readmeFilename": "README.md",
+    "_id": "noderad@0.1.9",
+    "_from": "noderad@0.1.9"
+}

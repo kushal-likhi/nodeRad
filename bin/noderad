@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+var program = require('commander')
+    , mkdirp = require('mkdirp')
+    , version = require("../package.json").version
+    , os = require('os')
+    , fs = require('fs');
+
+
+// CLI
+
+program
+    .version(version)
+    .usage('[options] [dir/path]')
+    .option('-s, --cookie-sessions', 'add cookie session support')
+    .option('-t, --it', 'add sample integration tests. Also adds IPC')
+    .option('-e, --ejs', 'add ejs engine support (Default)')
+    .option('-j, --jade', 'add jade engine support')
+    .option('-H, --hogan', 'add hogan.js engine support')
+    .option('-c, --css <engine>', 'add stylesheet <engine> support (less|stylus) (defaults to plain css)')
+    .option('-f, --force', 'force on non-empty directory');
+
+program.on('--help', function () {
+    console.log('  Examples:');
+    console.log('');
+    console.log('    $ custom-help --help');
+    console.log('    $ custom-help -h');
+    console.log('');
+});
+program.parse(process.argv)
+
+
+if (program.rawArgs.length <= 2) require("../");
